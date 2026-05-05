@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "NeuraSpeech",
+    "slug": "neura-speech",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FAFAF9"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.neuraspeech.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "NeuraSpeech needs microphone access to record and analyze your speech."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FAFAF9"
+      },
+      "package": "com.neuraspeech.app",
+      "permissions": [
+        "RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "dangerousPropertyToBypassCSP": true
+    },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "NeuraSpeech needs microphone access to record and analyze your speech."
+        }
+      ]
+    ]
+  }
+}
